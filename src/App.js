@@ -1,10 +1,14 @@
-import './App.css';
+import React from "react";
+import "./App.scss";
+import Header from "./components/Header";
+import HomeBanner from "./components/HomeBanner";
 
 function App() {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <React.Fragment>
+      <Header />
+      <HomeBanner />
+    </React.Fragment>
   );
 }
 
