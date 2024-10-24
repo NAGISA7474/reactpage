@@ -1,28 +1,15 @@
 import React from "react";
-<<<<<<< HEAD
-import "./App.scss";
-import Header from "./components/Header";
-=======
 import './App.scss';
 import Header from './components/Header.js';
->>>>>>> ff2a345 (complete)
 import HomeBanner from "./components/HomeBanner";
 import Login from "./components/Login";
 import Banner from "./components/Banner";
 import List from "./components/List";
-<<<<<<< HEAD
-=======
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
->>>>>>> ff2a345 (complete)
 
 function App() {
   return (
     <React.Fragment>
-<<<<<<< HEAD
-      <Header />
-      <Banner />
-      <List />
-=======
       <Router>
         <Routes>
           <Route path="/" element={
@@ -57,7 +44,6 @@ function App() {
           }/>
         </Routes>
       </Router>
->>>>>>> ff2a345 (complete)
     </React.Fragment>
   );
 }
