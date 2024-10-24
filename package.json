@@ -55,6 +55,10 @@
     }
   },
   "devDependencies": {
+    "@babel/core": "7.22.5",
+    "@babel/eslint-parser": "7.22.5",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "@babel/preset-env": "7.22.5",
     "axios": "^0.27.2",
     "bootstrap-scss": "^5.3.3",
     "postcss": "^8.4.47",

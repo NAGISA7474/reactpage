@@ -2,10 +2,10 @@ const Banner = () => {
   return(
     <div className="banner">
       <div className="banner__contents">
-        <h1 className="banner__title">Ginny &amp; Georgia</h1>
+        <h1 className="banner__title">グリーンブック</h1>
         <div className="banner__buttons">
-          <button className="banner__button">Play</button>
-          <button className="banner__button">My List</button>
+          <button className="banner__button">再生</button>
+          <button className="banner__button">マイリスト</button>
         </div>
         <h1 className="banner__description">
           Angsty and awkward fifteen year old Ginny Miller often feels more

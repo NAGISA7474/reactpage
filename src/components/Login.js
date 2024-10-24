@@ -73,7 +73,7 @@ const Login = () => {
   return(
     <div className="login">
       <div className="holder">
-        <h1 className="text-white">{ page ? 'Sign In' : 'Register'}</h1>
+        <h1 className="text-white">{ page ? 'ログイン' : '登録'}</h1>
         <br/>
         <form>
           <input 
@@ -81,31 +81,31 @@ const Login = () => {
             value={email} 
             onChange={emailOnChangeHandler} 
             type="email" 
-            placeholder="Email"/>
-          { !emailValid && <p className="text-danger">Email is invalid/blank</p> }
+            placeholder="メールアドレス"/>
+          { !emailValid && <p className="text-danger">有効なメールアドレスを入力してください</p> }
           <input 
             className="form-control"
             value={password} 
             onChange={(e)=>setPassword(e.target.value)} 
             type="password" 
-            placeholder="Password"/>
-          { !passwordValid && <p className="text-danger">Password is invalid/blank</p>}
+            placeholder="パスワード"/>
+          { !passwordValid && <p className="text-danger">パスワードは4文字以上60文字以内でなければいけません。</p>}
           <button className="btn btn-danger btn-block" onClick={ctaClickHandler}>
-            { page ? 'Sign In' : 'Register'}
+            { page ? 'ログイン' : '登録'}
           </button>
           <br/>
           {
             page && <div className="form-check">
             <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
             <label className="form-check-label text-white" htmlFor="flexCheckDefault">
-              Remember Me
+              ログインしたままにする
             </label>
           </div>
           }
         </form>
         <br/>
         <br/>
-        { isUserExist && <p className="text-danger">User does not exist | Go for Signup</p> }
+        { isUserExist && <p className="text-danger">初めてご利用ですか? | 新規登録はこちら</p> }
         { isEmailUsed && <p className="text-danger">Email already in use | Go for Sign In</p> }
         <div className="login-form-other">
           <div className="login-signup-now">
