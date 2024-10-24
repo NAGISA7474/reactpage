@@ -19,10 +19,10 @@ const Header = () => {
           <div className="navbar">
             <form className="d-flex" role="search">
               <select>
+                <option>日本語</option>
                 <option>English</option>
-                <option>Hindi</option>
               </select>
-              <button className="btn btn-danger" onClick={clickHandler}>Signin</button>
+              <button className="btn btn-danger" onClick={clickHandler}>ログイン</button>
             </form>
           </div>
         </div>

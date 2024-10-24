@@ -8,9 +8,9 @@ const Banner = () => {
           <button className="banner__button">マイリスト</button>
         </div>
         <h1 className="banner__description">
-          Angsty and awkward fifteen year old Ginny Miller often feels more
-          mature than her thirty year old mother, the irresistible and dynamic
-          Georgia Miller...
+        時は1962年、ニューヨークの一流ナイトクラブ、
+        コパカバーナで用心棒を務めるトニー・リップは、
+        ガサツで無学だが、腕っぷしとハッタリで家族や周囲に頼りにされていた。ある日...
         </h1>
       </div>
       <div className="banner--fadeBottom"></div>

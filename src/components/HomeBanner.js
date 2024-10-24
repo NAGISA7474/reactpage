@@ -2,12 +2,12 @@ const HomeBanner = () => {
   return(
     <div className="home-banner">
       <div className="our-story">
-        <h1 className="our-story-card-title" data-uia="hero-title">Unlimited movies, TV shows and more.</h1>
-        <h2 className="our-story-card-subtitle" data-uia="our-story-card-subtitle">Watch anywhere. Cancel anytime.</h2>
-        <p className="email-form-title">Ready to watch? Enter your email to create or restart your membership.</p>
+        <h1 className="our-story-card-title" data-uia="hero-title">映画もドラマも見放題</h1>
+        <h2 className="our-story-card-subtitle" data-uia="our-story-card-subtitle">料金は¥０から。いつでもキャンセルできます。</h2>
+        <p className="email-form-title">まもなくご視聴いただけます!メールアドレスを入力してメンバーシップを開始、または再開してください。</p>
         <div className="input-group">
-          <input type="text" className="form-control" placeholder="Email Address" />
-          <button className="input-group-button btn-danger text-white">Get Started</button>
+          <input type="text" className="form-control" placeholder="メールアドレス" />
+          <button className="input-group-button btn-danger text-white">今すぐ始める</button>
         </div>
       </div>
       <div className="shadow"></div>

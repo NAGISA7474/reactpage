@@ -49,7 +49,6 @@ const Login = () => {
         }
       })
       .catch( error => setUserExist(true));
-      // user-not-found
     }else{
       createUserWithEmailAndPassword(auth, email, password)
       .then(
@@ -82,7 +81,7 @@ const Login = () => {
             onChange={emailOnChangeHandler} 
             type="email" 
             placeholder="メールアドレス"/>
-          { !emailValid && <p className="text-danger">有効なメールアドレスを入力してください</p> }
+          { !emailValid && <p className="text-danger">有効なメールアドレスを入力してください。</p> }
           <input 
             className="form-control"
             value={password} 
@@ -105,13 +104,13 @@ const Login = () => {
         </form>
         <br/>
         <br/>
-        { isUserExist && <p className="text-danger">初めてご利用ですか? | 新規登録はこちら</p> }
-        { isEmailUsed && <p className="text-danger">Email already in use | Go for Sign In</p> }
+        { isUserExist && <p className="text-danger">存在しないユーザーです | 新規登録してください</p> }
+        { isEmailUsed && <p className="text-danger">登録済みのユーザーです | ログインしてください</p> }
         <div className="login-form-other">
           <div className="login-signup-now">
-          { page ? 'New to Netflix?' : 'Existing User'} &nbsp;
+          { page ? '初めてご利用ですか?' : '登録済みユーザー'} &nbsp;
             <Link className=" " to={page ? '/register' : '/login'}>
-              { page ? 'Sign up now' : 'Sign In'}
+              { page ? '新規登録はこちら' : 'ログイン'}
             </Link>.
           </div>
         </div>
