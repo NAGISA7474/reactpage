@@ -24,4 +24,4 @@ yarn-error.log*
 
 
 components/firebaseConfig.js
-api/api.js
+api/
