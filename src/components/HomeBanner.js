@@ -2,9 +2,9 @@ const HomeBanner = () => {
   return(
     <div className="home-banner">
       <div className="our-story">
-        <h1 className="our-story-card-title" data-uia="hero-title">映画もドラマも見放題</h1>
+        <h1 className="our-story-card-title" data-uia="hero-title">Netflixを模倣</h1>
         <h2 className="our-story-card-subtitle" data-uia="our-story-card-subtitle">料金は¥０から。いつでもキャンセルできます。</h2>
-        <p className="email-form-title">まもなくご視聴いただけます!メールアドレスを入力してメンバーシップを開始、または再開してください。</p>
+        <p className="email-form-title">Reactを使用してNetflixを模倣した偽サイト</p>
         <div className="input-group">
           <input type="text" className="form-control" placeholder="メールアドレス" />
           <button className="input-group-button btn-danger text-white">今すぐ始める</button>
